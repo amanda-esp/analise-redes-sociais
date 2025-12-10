@@ -82,7 +82,7 @@ CREATE (p:Posts{
   legenda: posts.legenda,
   tipoAnexo: posts.anexo,
   duracaoAnexo: posts.duracao_anexo,
-  localPostagem: posts.localpostagem,
+  localPostagem: posts.local_postagem,
   usuariosMarcados: posts.tags_usuarios
   })
 RETURN p
