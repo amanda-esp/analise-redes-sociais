@@ -1,0 +1,5 @@
+MATCH(u:Usuario)
+MATCH(u1:Usuario)
+MATCH(p:Posts)
+WHERE(u1)-[:SEGUE]->(u)-[:POSTOU]->(p)
+MERGE(u1)-[:CURTIU]->(p)
